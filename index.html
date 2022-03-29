@@ -8,28 +8,13 @@
 </head>
 <style>
     html {
+        background: #000;
         font-family:garamond;
             width: 100%;
             height: 100%;
             margin: 0;
             border: 0;
         }
-    body{
-            background: linear-gradient(-45deg,#f9957f,#ff0000,#7a00ff,#00ffd5);
-            background-size: 700% 700%;
-            animation: gradient 15s infinite;
-        }
-        @keyframes gradient {
-            0%{
-            background-position: 0% 50%;
-        }
-        50%{
-            background-position: 100% 50%;
-        }
-        100%{
-            background-position: 0% 50%;
-        }
-    }
     h1{
         font-family: garamond;
         font-size:3em;
@@ -41,10 +26,12 @@
     }
 </style>
 <body>
+
     <h1>DONALD PAGE</h1>
     <p>Hi, My name is Donald.</p>
+    <img src="data:image/jpeg;base64,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" alt="donald_img" width="200px" height="200px">
     <h1>Hobbies</h1>
-    <p>I love programming and playing video games. I have been programming for 5 years. </p>  
+    <p>I love programming and video games. </p>  
     <h1>Favorite Sports</h1>
     <p>I love playing soccer and basketball. I also love playing table tennis.</p>
 
